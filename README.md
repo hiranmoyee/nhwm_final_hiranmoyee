@@ -31,6 +31,8 @@ npm install
 
 npm run dev
 
+---
+
 ## 📂 Project Structure
 
 📦 my-project
@@ -67,7 +69,8 @@ npm run dev
  ┣ 📜 App.css           # Global Styles
  ┣ 📜 index.css         # Index Styles
  ┗ 📜 vite-env.d.ts     # TypeScript Environment Config
-
+ 
+---
 
 ## 🚀 Features
 
