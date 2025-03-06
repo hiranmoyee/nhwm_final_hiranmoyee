@@ -35,44 +35,71 @@ npm run dev
 📂 Project Structure
 
 📦 my-project
+
  ┣ 📜 App.tsx           # Main App Component
 
  ┣ 📜 main.tsx          # Entry Point
 
  ┣ 📜 routes.tsx        # App Routes
 
- ┣ 📜 theme.ts          # MUI Theme Config
+ ┣ 📜 theme.ts           # MUI Theme Config
 
- ┣ 📂 assets            # Static images and icons
+ ┣ 📂 assets             # Static images and icons
 
  ┃ ┣ 📜 analytics.svg
- 
- ┃ ┣ 📜 exam_hero.svg
+
+ ┃ ┣ 📜 exam_hero.svg 
+
  ┃ ┣ 📜 online_test.svg
+
  ┃ ┣ 📜 react.svg
+
  ┃ ┗ 📜 student_study.svg
+
  ┣ 📂 components        # Reusable UI components
+
  ┃ ┣ 📜 Footer.tsx
+
  ┃ ┣ 📜 Hero.tsx
+
  ┃ ┗ 📜 Navbar.tsx
+
  ┣ 📂 data              # Mock data for testing
+
  ┃ ┗ 📜 mockQuestions.ts
+
  ┣ 📂 pages             # Main Pages
+
  ┃ ┣ 📜 Home.tsx
+
  ┃ ┣ 📜 Login.tsx
+
  ┃ ┣ 📜 exam.tsx
+
  ┃ ┗ 📜 ThankYou.tsx
+
  ┣ 📂 redux             # Redux Toolkit store & slices
+
  ┃ ┣ 📜 authSlice.ts
+
  ┃ ┗ 📜 store.ts
+
  ┣ 📂 store             # State management slices
+
  ┃ ┣ 📜 examSlice.ts
+
  ┃ ┗ 📜 index.ts
+
  ┣ 📂 styles            # Styled components / CSS-in-JS
+
  ┃ ┣ 📜 examStyles.ts
+
  ┃ ┗ 📜 loginStyles.ts
+
  ┣ 📜 App.css           # Global Styles
+
  ┣ 📜 index.css         # Index Styles
+ 
  ┗ 📜 vite-env.d.ts     # TypeScript Environment Config
 
 🚀 Features
