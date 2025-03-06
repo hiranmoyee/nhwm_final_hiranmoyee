@@ -1,4 +1,4 @@
-# 🚀 ExamHub MCQ - React + TypeScript  
+# 🚀 ExamHub - React + TypeScript  
 
 ![React](https://img.shields.io/badge/React-19-blue)  
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)  
