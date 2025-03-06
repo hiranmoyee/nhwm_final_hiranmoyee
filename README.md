@@ -1,6 +1,5 @@
 # 🚀 ExamHub MCQ - React + TypeScript  
 
-<<<<<<< HEAD
 =======
 ![React](https://img.shields.io/badge/React-19-blue) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)
@@ -32,7 +31,8 @@ npm install
 
 npm run dev
 
-📂 Project Structure
+## 📂 Project Structure
+
 
 📦 my-project
 
@@ -99,18 +99,25 @@ npm run dev
  ┣ 📜 App.css           # Global Styles
 
  ┣ 📜 index.css         # Index Styles
- 
+
  ┗ 📜 vite-env.d.ts     # TypeScript Environment Config
 
-🚀 Features
+## 🚀 Features
 
 ✅ Fast & Optimized – Powered by Vite for instant loading.
+
 ✅ Type-Safe Code – Built with TypeScript to prevent runtime errors.
+
 ✅ Beautiful UI – Styled with Material-UI (MUI) for a modern look.
+
 ✅ Animations – Smooth UI interactions with Framer Motion.
+
 ✅ Redux State Management – Centralized state handling for authentication & exams.
+
 ✅ Fully Responsive – Works seamlessly across all devices.
-🛠 Dependencies
+
+
+## 🛠 Dependencies
 
 Install all required dependencies using:
 
@@ -133,4 +140,3 @@ npm install redux @reduxjs/toolkit react-redux framer-motion
 
 Let me know if you need any adjustments! 🚀😊
 
->>>>>>> 7e7e7d9 (Update Readme MD AND color theme)
