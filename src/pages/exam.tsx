@@ -23,7 +23,6 @@ import {
 } from "@mui/material";
 import examStyles from "../styles/examStyles"; 
 
-// Function to get 10 random questions from mockQuestions
 const getRandomQuestions = (allQuestions: typeof mockQuestions, count: number) => {
   return [...allQuestions].sort(() => Math.random() - 0.5).slice(0, count);
 };
@@ -46,7 +45,7 @@ const Exam = () => {
   }, []);
 
   useEffect(() => {
-    setLocalAnswer(userAnswers[currentQuestionIndex + 1] || "");
+    setLocalAnswer(userAnswers[currentQuestionIndex + 1]?.answer || "");
   }, [currentQuestionIndex, userAnswers]);
 
   const handleAnswerChange = (value: string) => {
@@ -62,8 +61,18 @@ const Exam = () => {
 
   const saveCurrentAnswer = () => {
     if (localAnswer.trim() !== "") {
-      dispatch(saveAnswer({ questionId: currentQuestionIndex + 1, answer: localAnswer }));
-      console.log(`Saved answer for Question ${currentQuestionIndex + 1}:`, localAnswer);
+      const currentQuestion = questions[currentQuestionIndex];
+      dispatch(
+        saveAnswer({
+          questionId: currentQuestionIndex + 1,
+          id: currentQuestion.id, // Include the actual question ID
+          answer: localAnswer,
+        })
+      );
+      console.log(
+        `Saved answer for Question ${currentQuestionIndex + 1} (ID: ${currentQuestion.id}):`,
+        localAnswer
+      );
     }
   };
 
@@ -117,9 +126,15 @@ const Exam = () => {
         {currentQuestion?.question_type === "mcq" && (
           <FormControl component="fieldset" sx={{ mt: 2 }}>
             <RadioGroup
-              value={userAnswers[currentQuestionIndex + 1] || ""}
+              value={userAnswers[currentQuestionIndex + 1]?.answer || ""}
               onChange={(e) => {
-                dispatch(saveAnswer({ questionId: currentQuestionIndex + 1, answer: e.target.value }));
+                dispatch(
+                  saveAnswer({
+                    questionId: currentQuestionIndex + 1,
+                    id: currentQuestion.id,
+                    answer: e.target.value,
+                  })
+                );
               }}
               sx={{ pl: 6 }}
             >

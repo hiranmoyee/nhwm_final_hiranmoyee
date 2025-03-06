@@ -1,9 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type UserAnswersType = Record<number, string>;
+interface AnswerPayload {
+  questionId: number;
+  id: number;
+  answer: string;
+}
 
 interface ExamState {
-  answers: UserAnswersType;
+  answers: { [key: number]: { id: number; answer: string } };
 }
 
 const initialState: ExamState = {
@@ -11,17 +15,18 @@ const initialState: ExamState = {
 };
 
 const examSlice = createSlice({
-    name: "exam",
-    initialState,
-    reducers: {
-        saveAnswer: (state, action: PayloadAction<{ questionId: number; answer: string }>) => {
-            state.answers[action.payload.questionId] = action.payload.answer;
-            console.log("Redux Store Updated:", JSON.stringify(state.answers, null, 2));
-          },
-          resetExam: () => initialState,
+  name: "exam",
+  initialState,
+  reducers: {
+    saveAnswer: (state, action: PayloadAction<AnswerPayload>) => {
+      const { questionId, id, answer } = action.payload;
+      state.answers[questionId] = { id, answer };
     },
-  });
-  
+    resetExam: (state) => {
+      state.answers = {};
+    },
+  },
+});
 
-export const { saveAnswer,resetExam } = examSlice.actions;
+export const { saveAnswer, resetExam } = examSlice.actions;
 export default examSlice.reducer;
