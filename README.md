@@ -36,11 +36,17 @@ npm run dev
 
 📦 my-project
  ┣ 📜 App.tsx           # Main App Component
+
  ┣ 📜 main.tsx          # Entry Point
+
  ┣ 📜 routes.tsx        # App Routes
+
  ┣ 📜 theme.ts          # MUI Theme Config
+
  ┣ 📂 assets            # Static images and icons
+
  ┃ ┣ 📜 analytics.svg
+ 
  ┃ ┣ 📜 exam_hero.svg
  ┃ ┣ 📜 online_test.svg
  ┃ ┣ 📜 react.svg
