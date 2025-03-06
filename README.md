@@ -1,6 +1,6 @@
 # 🚀 ExamHub MCQ - React + TypeScript  
 
-=======
+
 ![React](https://img.shields.io/badge/React-19-blue) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)
 ![Vite](https://img.shields.io/badge/Vite-6.2-purple)
