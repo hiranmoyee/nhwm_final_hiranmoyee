@@ -31,11 +31,10 @@ const ThankYou = () => {
           Your exam has been successfully submitted.
         </Typography>
         <Button
-          variant="contained"
-          color="primary"
+          variant="outlined"
           sx={{
             mt: 4,
-            width: { xs: "100%", sm: "auto" }, // Full-width button on mobile
+            width: { xs: "100%", sm: "auto", color:"#6c63ff" }, // Full-width button on mobile
             py: 1.2, // Increase padding for better tap area
           }}
           onClick={() => navigate("/")}

@@ -24,9 +24,9 @@ const loginStyles = {
     },
     startExamButton: {
       mt: 2,
-      backgroundColor: "#4A90E2", 
+      backgroundColor: "#6c63ff", 
       color: "white",
-      "&:hover": { backgroundColor: "#4A90E2" },
+      "&:hover": { backgroundColor: "#6c63ff" },
       
     },
     footerText: {

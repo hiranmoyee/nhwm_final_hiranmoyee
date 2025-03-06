@@ -79,7 +79,7 @@ const Hero = () => {
                   store: "Google Play",
                   imgSrc: "/google-play.png",
                   link: "https://play.google.com/store",
-                  bgColor: "#4A90E2", // Google Play blue
+                  bgColor: "#6c63ff",
                   hoverColor: "#357AE8",
                 },
               ].map(({ label, store, imgSrc, link, bgColor, hoverColor }, index) => (
@@ -90,27 +90,28 @@ const Hero = () => {
                     backgroundColor: bgColor,
                     color: "white",
                     padding: "10px 12px",
-                    borderRadius: "8px",
+                    borderRadius: "50px",
                     fontSize: "12px",
                     fontWeight: "bold",
-                    textAlign: "center",
-                    width: "180px", // Ensures same width
-                    minHeight: "60px", // Ensures same height
+                    textAlign: "left", 
+                    width: "170px", 
+                    minHeight: "50px", 
                     display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    alignItems: "center", 
+                    gap: 1.5, 
                     "&:hover": { backgroundColor: hoverColor },
                   }}
-                  startIcon={
-                    <img src={imgSrc} alt={store} style={{ width: 20, height: 20 }} />
-                  }
                   onClick={() => window.open(link, "_blank")}
                 >
-                  {label} <br /> {store}
+                  <img src={imgSrc} alt={store} style={{ width: 30, height: 30 }} />
+                  <Box display="flex" flexDirection="column" alignItems="flex-start">
+                    <span style={{ fontSize: "8px", opacity: 0.8 }}>{label}</span>
+                    <span style={{ fontSize: "10px", fontWeight: "bold" }}>{store}</span>
+                  </Box>
                 </Button>
               ))}
             </Box>
+
 
 
             <Box sx={{ mt: 4 }}>

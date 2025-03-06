@@ -42,17 +42,18 @@ const Navbar = () => {
                   </ListItem>
                 ))}
                <ListItem 
-  component="div" // Avoids nesting button inside button
-  onClick={() => { 
-    setDrawerOpen(false); 
-    navigate("/login"); 
-  }} 
-  sx={{ textAlign: "center", width: "100%" }}
->
-  <Button variant="contained" color="primary" fullWidth>
-    Get Started
-  </Button>
-</ListItem>
+                  component="div" // Avoids nesting button inside button
+                  onClick={() => { 
+                    setDrawerOpen(false); 
+                    navigate("/login"); 
+                  }} 
+                  sx={{ textAlign: "center", width: "100%" }}
+                >
+               <Button variant="contained" sx={{ backgroundColor: "#6c63ff", color: "white" }} fullWidth>
+                  Get Started
+                </Button>
+
+              </ListItem>
 
               </List>
             </Drawer>
