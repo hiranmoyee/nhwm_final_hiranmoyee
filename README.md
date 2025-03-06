@@ -2,10 +2,10 @@
 
 <<<<<<< HEAD
 =======
-![React](https://img.shields.io/badge/React-18-blue) 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
-![Vite](https://img.shields.io/badge/Vite-4.0-purple)
-![MUI](https://img.shields.io/badge/MUI-5.0-blue)
+![React](https://img.shields.io/badge/React-19-blue) 
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)
+![Vite](https://img.shields.io/badge/Vite-6.2-purple)
+![MUI](https://img.shields.io/badge/MUI-6.4.6-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📌 Overview  
