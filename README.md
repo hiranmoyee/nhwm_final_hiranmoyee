@@ -127,7 +127,9 @@ Or manually install them:
 
 
 npm install @mui/material @mui/icons-material @emotion/react @emotion/styled 
+
 npm install react-intersection-observer react-router-dom react-confetti
+
 npm install redux @reduxjs/toolkit react-redux framer-motion
 
 ---
